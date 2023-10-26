@@ -24,7 +24,7 @@ export const usePublishResult = (resultData) => {
     return;
   }
 
-  postServerData("http://localhost:5000/api/result", resultData)
+  postServerData(`${process.env.PORT}/api/result`, resultData)
     .then((data) => {})
     .catch((error) => {
       console.log(error);
