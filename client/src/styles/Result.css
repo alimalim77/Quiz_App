@@ -1,0 +1,75 @@
+/* Define CSS variables */
+:root {
+    --main-bg-color: #212121; /* Main background color */
+    --secondary-bg-color: #d8d8d8; /* Secondary background color */
+    --text-color: #cecece; /* Text color */
+    --highlight-color: #ff2a66; /* Highlight color */
+    --accent-color: #2aff95; /* Accent color */
+    --table-border-color: #faff5a; /* Table border color */
+  }
+  
+  /* Apply styles to .flex-center */
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid var(--text-color); /* Add some curves to the border */
+    border-radius: 10px; /* Border radius for curves */
+    padding: 3em 4em;
+    gap: 1em;
+    background-color: var(--main-bg-color);
+  }
+  
+  /* Apply styles to .container .flex */
+  .container .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Apply styles to .container .flex span */
+  .container .flex span {
+    font-size: 1.4em;
+    color: var(--text-color);
+  }
+  
+  /* Apply styles to .container .flex span.achieve */
+  .container .flex span.achieve {
+    font-weight: bold;
+    color: var(--highlight-color); /* Use the highlight color */
+    /* color: var(--accent-color); */ /* You can choose either highlight or accent color */
+  }
+  
+  /* Apply styles to the table */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+  }
+  
+  /* Apply styles to .table-header */
+  .table-header {
+    color: var(--text-color);
+    font-size: 1.1em;
+    text-align: center;
+    background: var(--main-bg-color);
+    padding: 18px 0;
+    border-bottom: 2px solid var(--table-border-color); /* Add some curves to the border */
+    border-top-left-radius: 10px; /* Curved top-left corner */
+    border-top-right-radius: 10px; /* Curved top-right corner */
+  }
+  
+  /* Apply styles to .table-body */
+  .table-body {
+    font-size: 1.1em;
+    text-align: center;
+    background: var(--secondary-bg-color);
+    padding: 18px 0;
+    border-bottom: 2px solid var(--table-border-color); /* Add some curves to the border */
+    border-bottom-left-radius: 10px; /* Curved bottom-left corner */
+    border-bottom-right-radius: 10px; /* Curved bottom-right corner */
+  }
+  
+  /* Apply styles to .table-header > tr > td */
+  .table-header > tr > td {
+    border: 2px solid var(--table-border-color);
+  }
+  

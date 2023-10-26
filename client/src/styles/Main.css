@@ -1,0 +1,55 @@
+/* Apply funky styles to the list items */
+.container ol li {
+    font-size: 1.4em;
+    color: #ff6b6b; /* Funky red color */
+    font-family: 'Comic Sans MS', cursive; /* Funky font */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 3px; /* Increase letter spacing */
+}
+
+/* Apply funky styles to the start button */
+.start {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.start .btn {
+    padding: .2em 1.7em;
+    border: none;
+    border-radius: .3em;
+    font-size: 1.2em;
+    color: #fff; /* White text color */
+    text-decoration: none;
+    background-color: #ff6b6b; /* Funky red background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Change button color on hover for a funky effect */
+.start .btn:hover {
+    background-color: #f06292; /* Lighter red on hover */
+}
+
+/* Apply funky styles to the user ID input field */
+#form {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+#form .userid {
+    padding: .7em 2em;
+    width: 50%;
+    border: 2px solid #ff6b6b; /* Funky red border */
+    border-radius: 3px;
+    font-size: 1em;
+    color: #ff6b6b; /* Funky red text color */
+    background-color: #faff5a; /* Funky yellow background */
+    transition: border-color 0.3s ease; /* Smooth border color transition */
+}
+
+/* Change border color on focus for a funky effect */
+#form .userid:focus {
+    border-color: #f06292; /* Lighter red on focus */
+}
