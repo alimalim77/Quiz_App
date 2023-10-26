@@ -6,14 +6,14 @@ import router from "./router/route.js";
 
 /** import connection file */
 import connect from "./database/conn.js";
-import { expressCspHeader, INLINE, NONE, SELF } from "express-csp-header";
+import csp from "express-csp-header";
 
 const app = express();
 app.use(
-  expressCspHeader({
+  csp({
     policies: {
-      "default-src": [expressCspHeader.NONE],
-      "img-src": [expressCspHeader.SELF],
+      "default-src": [csp.NONE],
+      "img-src": [csp.SELF],
     },
   })
 );
