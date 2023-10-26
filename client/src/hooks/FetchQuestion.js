@@ -21,7 +21,7 @@ export const useFetchQestion = () => {
     (async () => {
       try {
         const [{ questions, answers }] = await getServerData(
-          `${process.env.PORT}/api/questions`,
+          `${process.env.REACT_APP_PORT}/api/questions`,
           (data) => data
         );
 
