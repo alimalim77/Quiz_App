@@ -6,17 +6,9 @@ import router from "./router/route.js";
 
 /** import connection file */
 import connect from "./database/conn.js";
-import csp from "express-csp-header";
 
 const app = express();
-app.use(
-  csp({
-    policies: {
-      "default-src": [csp.NONE],
-      "img-src": [csp.SELF],
-    },
-  })
-);
+
 /** app middlewares */
 app.use(morgan("tiny"));
 app.use(cors());
