@@ -46,6 +46,7 @@ export default function ResultTable() {
     // Use the correct environment variable, process.env.PORT is not typically used for API endpoints
     getServerData(`${process.env.REACT_APP_PORT}/api/result`, (res) => {
       setData(res);
+      console.log(data);
     });
   }, []); // Empty dependency array to run the effect only once
 
@@ -60,7 +61,7 @@ export default function ResultTable() {
             <td>Result</td>
           </tr>
         </thead>
-        <tbody>
+        {/* <tbody>
           {data.length === 0 ? (
             <tr>
               <td colSpan="4">No Data Found</td>
@@ -75,7 +76,7 @@ export default function ResultTable() {
               </tr>
             ))
           )}
-        </tbody>
+        </tbody> */}
       </table>
     </div>
   );
